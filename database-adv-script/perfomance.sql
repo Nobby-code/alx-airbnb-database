@@ -18,4 +18,6 @@ JOIN
     property p ON b.property_id = p.id
 JOIN 
     payment pay ON b.payment_id = pay.id;
-
+WHERE 
+    pay.status = 'completed'
+    AND p.location = 'Nairobi';
