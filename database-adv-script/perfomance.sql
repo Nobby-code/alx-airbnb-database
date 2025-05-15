@@ -1,4 +1,5 @@
 -- Original complex query with full joins
+EXPLAIN
 SELECT 
     b.booking_id AS booking Id,
     b.start_date,
