@@ -9,3 +9,10 @@ CREATE INDEX idx_booking_property_id ON booking(property_id);
 -- Indexes for properties table 
 CREATE INDEX idx_property_id ON property(id); 
 CREATE INDEX idx_property_price ON property(price);
+
+-- Explain analyze output
+EXPLAIN ANALYZE
+SELECT * 
+FROM booking
+WHERE user_id = 2 
+ORDER BY booking_date DESC;
