@@ -46,4 +46,5 @@ SELECT
 FROM
   users u
 FULL OUTER JOIN
-  booking b on u.user_id = b.user_id;
+  booking b on u.user_id = b.user_id
+ORDER BY u.user_id ASC;
